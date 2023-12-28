@@ -1,46 +1,24 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+import { DEFAULT_LANG, KEY_LANG } from "@/constants/i18n";
+import { load, save } from "@/utils/storage";
 import i18next from "i18next";
-import { DEFAULT_LANG } from "@/constants/i18n";
-import I18NextHttpBackend from "i18next-http-backend";
-import { initReactI18next, useTranslation } from "react-i18next";
-import { enLang, viLang } from "@/i18n";
-
-const resources = Object.freeze({
-  vi: { translation: viLang },
-  en: { translation: enLang },
-});
-
-i18next
-  .use(I18NextHttpBackend)
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: DEFAULT_LANG,
-    fallbackLng: "en",
-    debug: false,
-    react: {
-      useSuspense: false,
-    },
-    interpolation: {
-      escapeValue: false,
-      formatSeparator: ",",
-    },
-  })
-  .then(() => {
-    console.log("initialI18Next success!");
-  })
-  .catch((e) => {
-    console.log("initialI18Next error", e);
-  });
+import { useState } from "react";
 
 const useLang = () => {
-  const onChangeLang = (code: string): void => {
-    console.log(code);
+  const langLocal = load(KEY_LANG);
 
+  !langLocal && save(KEY_LANG, DEFAULT_LANG);
+
+  const language = langLocal || DEFAULT_LANG;
+
+  const [lang, setLang] = useState(language);
+
+  const onChangeLang = (code: string): void => {
     i18next.changeLanguage(code);
+    save(KEY_LANG, code);
+    setLang(code);
   };
 
-  return { i18next, onChangeLang };
+  return { lang, language, onChangeLang };
 };
 
 export default useLang;

@@ -8,13 +8,13 @@
       "facebook": "https://www.facebook.com/tuantm02/"
     },
     "summary": {
-      "0": "Kỹ sư Backend với hơn 4 năm kinh nghiệm trong phát triển và duy trì các hệ thống Web Service bằng NodeJS và MongoDB. Cũng có kinh nghiệm trong việc thu thập dữ liệu nhằm giám sát, điều khiển xe tự lái, máy bay không người lái thông qua giao tiếp với hệ thống robot (ROS) bằng giao thức MQTT. Đồng thời có hơn 1 năm kinh nghiệm trong phát triển các ứng dụng phía front-end sử dụng React Native, Vue.js, và tối ưu hóa các trang WordPress.",
+      "0": "Kỹ sư Frontend với gần 2 năm kinh nghiệm trong phát triển ứng dụng bằng React và Nextjs. Cũng có kinh nghiệm trong việc phát triển các dự án liên quan đến ecommerce, landing page và mobile, điều khiển xe tự lái trong máy bay không người lái thông qua giao tiếp với hệ thống robot (ROS) bằng giao thức MQTT. Đồng thời có gần 1 năm kinh nghiệm trong phát triển backend với nestjs và nodejs",
       "1": "Tôi luôn tận tâm và nghiêm túc với công việc để tạo ra giá trị cho công ty. Đồng thời luôn tìm tòi học hỏi, trau dồi kiến ​​thức, kỹ năng để trở thành một kỹ sư giỏi."
     },
     "skills": {
       "0": {
         "title": "Ngỗn ngữ lập trình",
-        "details": "JavaScript(4+ năm), TypeScript(2+ năm), Python(1+ năm)"
+        "details": "JavaScript(2 năm), TypeScript(2 năm)"
       },
       "1": {
         "title": "Hệ thống quản lý cơ sở dữ liệu",
@@ -22,11 +22,11 @@
       },
       "2": {
         "title": "Frameworks/Platforms",
-        "details": "NodeJS (Express, Fastify), Docker, Redis, ReactJS, React Native, VueJS, JQuery, WebSocket, Wordpress, CI/CD with Gitlab."
+        "details": "NodeJS (Express), ReactJS, React Native, VueJS, WebSocket, Nextjs, Nestjs."
       },
       "3": {
         "title": "Version Control",
-        "details": "Git, SVN."
+        "details": "Git."
       },
       "4": {
         "title": "IoT",
@@ -34,7 +34,7 @@
       },
       "5": {
         "title": "Hệ điều hành",
-        "details": "Linux, VPS, Linux server, Window."
+        "details": "Linux, Window."
       },
       "6": {
         "title": "Một số công cụ khác",
@@ -45,9 +45,6 @@
       },
       "8": {
         "details": "Quen thuộc với các phương pháp phát triển Agile/Scrum."
-      },
-      "9": {
-        "details": "Cố vấn và đánh giá chất lượng code."
       }
     },
     "workExperience": {

@@ -1,10 +1,6 @@
-"use client";
-
-import { ModeLang } from "./modeLang";
-
-const Header = () => {
+const Header = ({ className }: { className?: string }) => {
   return (
-    <div className="container flex flex-col items-center my-5">
+    <div className={`container flex flex-col items-center my-5 ${className}`}>
       <div className="flex flex-col items-center">
         <p className="text-3xl font-medium text-center">Trinh Minh Tuan</p>
         <p className="text-xl font-medium text-center">Frontend Developer</p>
@@ -17,7 +13,9 @@ const Header = () => {
             tuantm@gmail.com
           </a>
           <a target="_blank" href="tel:0987571662" className="mx-2 border-x-2">
-            <p className="mx-2 border-b-2 hover:cursor-pointer hover:border-b-gray-400 delay-100 transition-opacity">0987571662</p>
+            <p className="mx-2 border-b-2 hover:cursor-pointer hover:border-b-gray-400 delay-100 transition-opacity">
+              0987571662
+            </p>
           </a>
           <a
             target="_blank"
@@ -27,7 +25,6 @@ const Header = () => {
             Facebook
           </a>
         </div>
-        <ModeLang />
       </div>
     </div>
   );
