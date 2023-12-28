@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "repository": "https://github.com/tuan2tm/profile",
-  "description": "My profile page. Build with Next 14",
-  "author": "Tuantm <tuantrinh28072002@gmail.com>",
+  "description": "My profile page. Build with Next 13",
+  "author": "Tuantm <tuantm@gmail.com>",
   "scripts": {
-    "dev": "next dev -p 2002",
+    "dev": "next dev -p 2000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
