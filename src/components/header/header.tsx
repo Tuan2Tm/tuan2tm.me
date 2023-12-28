@@ -1,5 +1,7 @@
 "use client";
 
+import { ModeLang } from "./modeLang";
+
 const Header = () => {
   return (
     <div className="container flex flex-col items-center my-5">
@@ -15,16 +17,17 @@ const Header = () => {
             tuantm@gmail.com
           </a>
           <a target="_blank" href="tel:0987571662" className="mx-2 border-x-2">
-            <p className="mx-2 border-b-2 ">0987571662</p>
+            <p className="mx-2 border-b-2 hover:cursor-pointer hover:border-b-gray-400 delay-100 transition-opacity">0987571662</p>
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/tuantm02/"
-            className="border-b-2"
+            className="border-b-2 hover:cursor-pointer hover:border-b-gray-400 delay-100 transition-opacity"
           >
             Facebook
           </a>
         </div>
+        <ModeLang />
       </div>
     </div>
   );

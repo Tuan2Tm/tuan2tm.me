@@ -8,10 +8,15 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import useLang from "@/hooks/useLang";
 
 export function ModeLang() {
+  const {onChangeLang, i18next} = useLang()
+  
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -22,8 +27,10 @@ export function ModeLang() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem>VietNamese</DropdownMenuItem>
-        <DropdownMenuItem>English</DropdownMenuItem>
+        <DropdownMenuLabel>Chon ngon ngu</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={() => onChangeLang('vi')}>VietNamese</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => onChangeLang('en')}>English</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
