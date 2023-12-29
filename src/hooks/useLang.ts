@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 /* eslint-disable react-hooks/rules-of-hooks */
 import { DEFAULT_LANG, KEY_LANG } from "@/constants/i18n";
