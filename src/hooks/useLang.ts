@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable react-hooks/rules-of-hooks */
 import i18next from "i18next";
 import { DEFAULT_LANG } from "@/constants/i18n";
