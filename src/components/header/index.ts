@@ -1,3 +1,5 @@
 import Header from "./header";
+import { ModeLang } from "./modeLang";
+import { ModeToggle } from "./modeToggle";
 
-export { Header };
+export { Header, ModeLang, ModeToggle };

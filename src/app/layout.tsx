@@ -1,41 +1,19 @@
 "use client";
 
 import "./globals.css";
-import { Header, ThemeProvider } from "@/components";
-import useLang from "@/hooks/useLang";
-import Head from "next/head";
-import { useEffect } from "react";
-import { I18nextProvider } from "react-i18next";
+import Layout from "./root";
+import { DEFAULT_LANG, KEY_LANG } from "@/constants/i18n";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const { i18next } = useLang();
-  useEffect(() => {
-    document.documentElement.lang = i18next.language;
-    console.log('call back');
-    
-  }, [i18next.language]);
-
+  const lang = localStorage.getItem(KEY_LANG);
   return (
-    <html lang={i18next.language} suppressHydrationWarning>
-      <Head>
-        <title>My page title</title>
-      </Head>
-      <body>
-        <I18nextProvider i18n={i18next}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            {children}
-          </ThemeProvider>
-        </I18nextProvider>
+    <html lang={lang || DEFAULT_LANG} suppressHydrationWarning>
+      <body className="w-full">
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
