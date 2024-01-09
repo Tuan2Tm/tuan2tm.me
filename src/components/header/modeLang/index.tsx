@@ -31,14 +31,16 @@ export function ModeLang({ className }: { className?: string }) {
           <DropdownMenuLabel>Chon ngon ngu</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem
-            className={`${lang === "vi" && "bg-gray-500"} my-2`}
+            className={`${lang === "vi" && "bg-gray-500"} cursor-pointer my-2`}
             onClick={() => onChangeLang("vi")}
+            disabled={lang === "vi"}
           >
             VietNamese
           </DropdownMenuItem>
           <DropdownMenuItem
-            className={`${lang === "en" && "bg-gray-500"}`}
+            className={`${lang === "en" && "bg-gray-500"} cursor-pointer`}
             onClick={() => onChangeLang("en")}
+            disabled={lang === "en"}
           >
             English
           </DropdownMenuItem>

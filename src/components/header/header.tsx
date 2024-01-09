@@ -1,8 +1,15 @@
+'use client'
+
+import { multiKeys } from "@/i18n";
+import { useTranslation } from "react-i18next";
+
 const Header = ({ className }: { className?: string }) => {
+  const {t} = useTranslation()
+  
   return (
     <div className={`container flex flex-col items-center my-5 ${className}`}>
       <div className="flex flex-col items-center">
-        <p className="text-3xl font-medium text-center">Trinh Minh Tuan</p>
+        <p className="text-3xl font-medium text-center">{t(multiKeys.app.name)}</p>
         <p className="text-xl font-medium text-center">Frontend Developer</p>
         <div className="flex my-2 items-center">
           <a

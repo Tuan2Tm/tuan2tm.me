@@ -1,12 +1,19 @@
 "use client";
-import { CVSkillDetail, CVTitle } from "@/components";
-import { getPersonalSummaryKeys, getSkillKeys, multiKeys } from "@/i18n";
+import { CVSkillDetail, CVTitle, CVWorkInfo } from "@/components";
+import {
+  getAdditionalInfoKeys,
+  getPersonalSummaryKeys,
+  getRespTransalteByIndex,
+  getSkillKeys,
+  getWorkKeys,
+  multiKeys,
+} from "@/i18n";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <div className="mx-auto lg:w-1/3 md:w-2/3 container  rounded-md ">
+    <div className="mx-auto lg:w-1/3 md:w-2/3 container xl:w-1/3 rounded-md ">
       <CVTitle
         className="pb-2"
         title={t(multiKeys.system.CVHeaderTitle.summary)}
@@ -30,6 +37,76 @@ export default function Home() {
           </li>
         ))}
       </ul>
+      <CVTitle
+        className="py-2"
+        title={t(multiKeys.system.CVHeaderTitle.experience)}
+      />
+      {getWorkKeys().map((item, idx) => (
+        <CVWorkInfo
+          key={idx}
+          companyLink={t(`${multiKeys.cv.workExperience}.${item}.company.link`)}
+          companyAddress={t(
+            `${multiKeys.cv.workExperience}.${item}.company.address`
+          )}
+          companyName={t(`${multiKeys.cv.workExperience}.${item}.company.name`)}
+          workPeriod={t(`${multiKeys.cv.workExperience}.${item}.job.period`)}
+          workPosition={t(
+            `${multiKeys.cv.workExperience}.${item}.job.position`
+          )}
+          project={t(`${multiKeys.system.CVWorkDetails.project}`)}
+          projectName={t(
+            `${multiKeys.cv.workExperience}.${item}.project.title`
+          )}
+          projectDescription={t(
+            `${multiKeys.cv.workExperience}.${item}.project.description`
+          )}
+          projectTechnologies={t(
+            `${multiKeys.cv.workExperience}.${item}.project.technologies`
+          )}
+          projectResponsibilities={getRespTransalteByIndex(`${item}`, t)}
+        />
+      ))}
+
+      <CVTitle
+        className="py-2"
+        title={t(multiKeys.system.CVHeaderTitle.education)}
+      />
+      {getWorkKeys().map((item, idx) => (
+        <CVWorkInfo
+          key={idx}
+          companyLink={t(`${multiKeys.cv.workExperience}.${item}.company.link`)}
+          companyAddress={t(
+            `${multiKeys.cv.workExperience}.${item}.company.address`
+          )}
+          companyName={t(`${multiKeys.cv.workExperience}.${item}.company.name`)}
+          workPeriod={t(`${multiKeys.cv.workExperience}.${item}.job.period`)}
+          workPosition={t(
+            `${multiKeys.cv.workExperience}.${item}.job.position`
+          )}
+          project={t(`${multiKeys.system.CVWorkDetails.project}`)}
+          projectName={t(
+            `${multiKeys.cv.workExperience}.${item}.project.title`
+          )}
+          projectDescription={t(
+            `${multiKeys.cv.workExperience}.${item}.project.description`
+          )}
+          projectTechnologies={t(
+            `${multiKeys.cv.workExperience}.${item}.project.technologies`
+          )}
+          projectResponsibilities={getRespTransalteByIndex(`${item}`, t)}
+        />
+      ))}
+
+      <CVTitle
+        className="py-2"
+        title={t(multiKeys.system.CVHeaderTitle.additionalInformation)}
+      />
+      {getAdditionalInfoKeys().map((item, idx) => (
+        <p key={idx}>{t(`${multiKeys.cv.additionalInformation}.${item}`)}</p>
+      ))}
+      <div className="flex justify-end mt-4">
+        <p className="text-sm">{t("system.lastUpdate")}</p>
+      </div>
     </div>
   );
 }

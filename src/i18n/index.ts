@@ -59,8 +59,36 @@ export const multiKeys = {
     persionalInfo: {},
     summary: "cv.summary",
     skills: "cv.skills",
+    workExperience: "cv.workExperience",
+    education: "cv.education",
+    additionalInformation: "cv.additionalInformation",
+  },
+  app: {
+    name: "app.name",
   },
 };
 
+export const getRespTransalteByIndex = <T>(
+  index: keyof typeof viLang.cv.workExperience,
+  t: (key: string) => string
+) => {
+  const project = viLang.cv.workExperience[index].project;
+
+  if (project && project.responsibilities) {
+    return Object.keys(project.responsibilities).map((key) =>
+      t(`cv.workExperience.${index}.project.responsibilities.${key}`)
+    );
+  }
+
+  return [];
+};
+
+export const getWorkKeys = (): Array<keyof typeof viLang.cv.workExperience> =>
+  Object.keys(viLang.cv.workExperience) as Array<
+    keyof typeof viLang.cv.workExperience
+  >;
+
+export const getAdditionalInfoKeys = () =>
+  Object.keys(viLang.cv.additionalInformation);
 export const getSkillKeys = () => Object.keys(viLang.cv.skills);
 export const getPersonalSummaryKeys = () => Object.keys(viLang.cv.summary);

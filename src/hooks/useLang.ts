@@ -1,4 +1,4 @@
-import { DEFAULT_LANG, KEY_LANG } from "@/constants/i18n";
+import { DEFAULT_LANG } from "@/constants/i18n";
 import i18next from "i18next";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ const useLang = () => {
     setLang(code);
   };
 
-  return { lang, language, onChangeLang };
+  return { lang, language, onChangeLang,  };
 };
 
 export default useLang;

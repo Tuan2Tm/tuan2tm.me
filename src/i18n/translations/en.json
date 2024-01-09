@@ -14,7 +14,7 @@
     "skills": {
       "0": {
         "title": "Programming Languages",
-        "details": "JavaScript(2+ years), TypeScript(2+ years)"
+        "details": "JavaScript(2+ years), TypeScript(1+ years)"
       },
       "1": {
         "title": "Database Management System",
@@ -22,7 +22,7 @@
       },
       "2": {
         "title": "Frameworks/Platforms",
-        "details": "NodeJS (Express), Docker, Redis, ReactJS, React Native, NextJS, NestJS, WebSocket."
+        "details": "NodeJS (Express), ReactJS, React Native, WebSocket, NextJS, NestJS."
       },
       "3": {
         "title": "Version Control",
@@ -41,13 +41,8 @@
         "details": "JIRA, Postman, Swagger."
       },
       "7": {
-        "details": "Experience with RESTful API design and implementation."
-      },
-      "8": {
-        "details": "Familiar with Agile/Scrum development methodologies."
-      },
-      "9": {
-        "details": "Mentoring and code reviews"
+        "title": "Experience",
+        "details": "Experience with RESTful API design and implementation. \n Familiar with Agile/Scrum development methodologies"
       }
     },
     "workExperience": {
@@ -59,10 +54,10 @@
         },
         "job": {
           "position": "Web Application Engineer",
-          "period": "06/2021 - Present"
+          "period": "07/2022 - Present"
         },
         "project": {
-          "title": "X Bus and Drone in a Box (DIB) Web Service.",
+          "title": "WebSite Phenikaa-X and Drone in a Box (DIB) Web Service.",
           "description": "Both X Bus and DIB Web Service are systems that help to collect data, manage and give commands to the real-time robot system.",
           "technologies": "Nodejs(Express, Fastify), MongoDB, Redis, Docker, MQTT, React & Redux, Vuejs & VueX, WebSocket.",
           "responsibilities": {
@@ -75,59 +70,16 @@
             "6": "Help junior developers in solving issues and review code quanlity."
           }
         }
-      },
-      "1": {
-        "company": {
-          "name": "FADI JSC",
-          "address": "Nam Dinh",
-          "link": "https://khoitaodoanhnghiep.com"
-        },
-        "job": {
-          "position": "Web Application Developer",
-          "period": "02/2019 - 02/2021"
-        },
-        "project": {
-          "title": "FADI Web Service.",
-          "description": "A system that helps to link and track customer contact data from WordPress pages, as well as improve the workflow of the company.",
-          "technologies": "Nodejs(Express), MongoDB, Docker, VueJS & VueX, Wordpress, Webpack.",
-          "responsibilities": {
-            "0": "Define the architecture, coding convention front-end and back-end projects (includes linter, unit test, build script using Docker).",
-            "1": "Communicate with superiors to design and build a back-end system to optimize the workflow of the company.",
-            "2": "Designing the database schemas and implementing the main modules of the back-end.",
-            "3": "Refactor the interface and optimizing the loading speed of the company's WordPress website. Linking user contact data with the backend through API."
-          }
-        }
-      },
-      "2": {
-        "company": {
-          "name": "ABAGolf",
-          "address": "Hoang Quoc Viet, Ha Noi",
-          "link": "{'#'}"
-        },
-        "job": {
-          "position": "Frontend Developer",
-          "period": "08/2018 - 02/2019"
-        },
-        "project": {
-          "title": "ABAGolf, Feeby.",
-          "description": "ABAGolf is a golf application designed for golf players, which helps organize tournaments and view scores in real-time, automatically calculate handicaps, book golf courses, and create chat groups. Feeby is an application that allows customers to review and receive discount codes after using the services of a store.",
-          "technologies": "Nodejs(Express), MongoDB, Vuejs & VueX, React Native & Redux, Bootstrap.",
-          "responsibilities": {
-            "0": "Developed an app interface based on Figma design using React Native.",
-            "1": "Implemented Redux for state management and integrated with REST API for data retrieval.",
-            "2": "Building interface components for the user's review management page using Bootstrap and Vuejs."
-          }
-        }
       }
     },
     "education": {
       "university": {
-        "name": "University of Engineering and Technology, VNU",
-        "address": "Cau Giay, Ha Noi"
+        "name": "FPT Polytechnic University",
+        "address": "Trinh Van Bo, Ha Noi"
       },
       "information": {
-        "degree": "Major: Information Technology",
-        "period": "09/2013 – 07/2018"
+        "degree": "Major: Software application",
+        "period": "10/2020 – 04/2023"
       }
     },
     "additionalInformation": {
@@ -160,26 +112,14 @@
       "technologies": "Technologies",
       "responsibilities": "Responsibilities"
     },
-    "messages": {
-      "savePDF": {
-        "error": "ERROR",
-        "errorMsg": "Something went wrong!",
-        "changeThemeDark": "Switching to dark mode...",
-        "changeThemeLight": "Switching to light mode...",
-        "changeLang-vi": "Switching language to Vietnamese...",
-        "changeLang-en": "Switching language to English...",
-        "autogen": "This CV has been automatically generated by the system."
-      }
-    },
     "lastUpdate": "Last updated: 10/03/2023",
     "footer": {
-      "intro": "2023 - PRESENT @ TuanTM",
+      "intro": "2024 - PRESENT @ TuanTM",
       "view": "views"
     }
   },
   "app": {
     "name": "Tuan Trinh Minh",
-    "content": "Tuan Trinh Minh",
-    "footer": {}
+    "content": "Tuan Trinh Minh"
   }
 }

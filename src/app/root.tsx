@@ -2,7 +2,7 @@
 
 import useLang from "@/hooks/useLang";
 import "./globals.css";
-import { Header, ThemeProvider } from "@/components";
+import { Footer, Header, ThemeProvider } from "@/components";
 import { initI18 } from "@/i18n";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
@@ -25,6 +25,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Header className="mt-12" />
         </div>
         {children}
+        <div className="flex justify-center">
+          <Footer />
+        </div>
       </ThemeProvider>
     </I18nextProvider>
   );
