@@ -58,7 +58,7 @@
         },
         "project": {
           "title": "WebSite Phenikaa-X và Drone in a Box (DIB) Web Service.",
-          "description": "Triển khai các ứng dụng theo dõi, điều khiển và web service cho xe tự lại và máy bay không người lại",
+          "description": "Triển khai các ứng dụng theo dõi, quảng cáo cho công ty , điều khiển và web service cho xe tự lại và máy bay không người lại",
           "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
           "responsibilities": {
             "0": "Xây dựng cấu ​​trúc, quy ước viết code cho tất cả các dự án front-end và back-end",

@@ -57,9 +57,9 @@
           "period": "07/2022 - Present"
         },
         "project": {
-          "title": "WebSite Phenikaa-X and Drone in a Box (DIB) Web Service.",
-          "description": "Both X Bus and DIB Web Service are systems that help to collect data, manage and give commands to the real-time robot system.",
-          "technologies": "Nodejs(Express, Fastify), MongoDB, Redis, Docker, MQTT, React & Redux, Vuejs & VueX, WebSocket.",
+          "title": "Phenikaa-X Website and Drone in a Box (DIB) Web Service.",
+          "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+          "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
           "responsibilities": {
             "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
             "1": "Communicating with stakeholders to build and design WebService systems.",
