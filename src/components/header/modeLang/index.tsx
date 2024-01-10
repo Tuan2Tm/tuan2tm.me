@@ -13,9 +13,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import useLang from "@/hooks/useLang";
+import { useTranslation } from "react-i18next";
+import { multiKeys } from "@/i18n";
 
 export function ModeLang({ className }: { className?: string }) {
   const { onChangeLang, lang } = useLang();
+  const {t} = useTranslation();
 
   return (
     <div className={className}>
@@ -28,21 +31,21 @@ export function ModeLang({ className }: { className?: string }) {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuLabel>Chon ngon ngu</DropdownMenuLabel>
+          <DropdownMenuLabel>{t(`${multiKeys.settings.languages.title}`)}</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem
             className={`${lang === "vi" && "bg-gray-500"} cursor-pointer my-2`}
             onClick={() => onChangeLang("vi")}
             disabled={lang === "vi"}
           >
-            VietNamese
+            {t(`${multiKeys.settings.languages.vi}`)}
           </DropdownMenuItem>
           <DropdownMenuItem
             className={`${lang === "en" && "bg-gray-500"} cursor-pointer`}
             onClick={() => onChangeLang("en")}
             disabled={lang === "en"}
           >
-            English
+            {t(`${multiKeys.settings.languages.en}`)}
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

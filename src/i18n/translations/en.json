@@ -61,20 +61,20 @@
           "description": "Both X Bus and DIB Web Service are systems that help to collect data, manage and give commands to the real-time robot system.",
           "technologies": "Nodejs(Express, Fastify), MongoDB, Redis, Docker, MQTT, React & Redux, Vuejs & VueX, WebSocket.",
           "responsibilities": {
-            "0": "Define the architecture, coding convention, and setup CI/CD system for all front-end and back-end projects (includes linter, unit test, build script using Docker).",
-            "1": "Communicate with relevant parties to build and design the WebService system.",
-            "2": "Design database schemas and implement back-end system to manage data from the Robot system (both XBus and DIB) and provide it to the front-end application.",
-            "3": "Reseach and develop the communication between the back-end system and the X Bus system via the MQTT protocol to collect data and send commands.",
-            "4": "Optimize the process of reading and writing data from WebSocket to MongoDB by improving database queries and utilizing Redis.",
-            "5": "Reseach and develop a service on the drone to decode data, send commands, and communicate with the back-end system via WebSocket.",
-            "6": "Help junior developers in solving issues and review code quanlity."
+            "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+            "1": "Communicating with stakeholders to build and design WebService systems.",
+            "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+            "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+            "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+            "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+            "6": "Managing code and deploying UI/UX with design through Figma to create websites."
           }
         }
       }
     },
     "education": {
       "university": {
-        "name": "FPT Polytechnic University",
+        "name": "FPT Polytechnic College",
         "address": "Trinh Van Bo, Ha Noi"
       },
       "information": {
@@ -91,11 +91,6 @@
       "title": "Choose languages",
       "vi": "Vietnamese",
       "en": "English"
-    },
-    "download": {
-      "title": "Download my CV",
-      "vi": "Vietnamese version",
-      "en": "English version"
     }
   },
   "system": {

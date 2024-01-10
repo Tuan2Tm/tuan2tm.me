@@ -60,11 +60,27 @@ export const multiKeys = {
     summary: "cv.summary",
     skills: "cv.skills",
     workExperience: "cv.workExperience",
-    education: "cv.education",
+    education: {
+      university: {
+        name: "cv.education.university.name",
+        address: "cv.education.university.address",
+      },
+      information: {
+        degree: "cv.education.information.degree",
+        period: "cv.education.information.period",
+      },
+    },
     additionalInformation: "cv.additionalInformation",
   },
   app: {
     name: "app.name",
+  },
+  settings: {
+    languages: {
+      title: "settings.languages.title",
+      vi: "settings.languages.vi",
+      en: "settings.languages.en",
+    },
   },
 };
 

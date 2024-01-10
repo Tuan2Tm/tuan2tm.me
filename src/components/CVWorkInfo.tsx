@@ -42,40 +42,40 @@ const CVWorkInfo: React.FC<Props> = (props) => {
         <p className="italic">{props.companyAddress}</p>
       </div>
 
-      <div className="mt-3">
-        <p>
-          <span className="font-semibold mr-2">{props.project}:</span>
-          {props.projectName}
-        </p>
-        <ul className="list-disc ml-8">
-          <li className="mt-1">
-            <p>
-              <span className="font-semibold mr-2">
-                {t(`${multiKeys.system.CVWorkDetails.description}`)}:
-              </span>
-              {props.projectDescription}
-            </p>
-          </li>
-          <li>
-            <p>
-              <span className="font-semibold mr-2">
-                {t(`${multiKeys.system.CVWorkDetails.technologies}`)}: 
-              </span>
-              {props.projectTechnologies}
-            </p>
-          </li>
-          <li>
-            <p>{t(`${multiKeys.system.CVWorkDetails.responsibilities}`)}:</p>
-            <ul className="list-[circle] ml-8">
-              {props.projectResponsibilities?.map((item, idx) => (
-                <li key={idx}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </li>
-        </ul>
-      </div>
+      {props.project && (
+        <div className="mt-3">
+          <p>
+            <span className="font-semibold mr-2">{props.project}:</span>
+            {props.projectName}
+          </p>
+          <ul className="list-disc ml-8">
+            <li className="mt-1">
+              <p>
+                <span className="font-semibold mr-2">
+                  {t(`${multiKeys.system.CVWorkDetails.description}`)}:
+                </span>
+                {props.projectDescription}
+              </p>
+            </li>
+            <li>
+              <p>
+                <span className="font-semibold mr-2">
+                  {t(`${multiKeys.system.CVWorkDetails.technologies}`)}:
+                </span>
+                {props.projectTechnologies}
+              </p>
+            </li>
+            <li>
+              <p>{t(`${multiKeys.system.CVWorkDetails.responsibilities}`)}:</p>
+              <ul className="list-[circle] ml-8">
+                {props.projectResponsibilities?.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

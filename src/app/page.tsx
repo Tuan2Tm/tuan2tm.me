@@ -71,31 +71,16 @@ export default function Home() {
         className="py-2"
         title={t(multiKeys.system.CVHeaderTitle.education)}
       />
-      {getWorkKeys().map((item, idx) => (
-        <CVWorkInfo
-          key={idx}
-          companyLink={t(`${multiKeys.cv.workExperience}.${item}.company.link`)}
-          companyAddress={t(
-            `${multiKeys.cv.workExperience}.${item}.company.address`
-          )}
-          companyName={t(`${multiKeys.cv.workExperience}.${item}.company.name`)}
-          workPeriod={t(`${multiKeys.cv.workExperience}.${item}.job.period`)}
-          workPosition={t(
-            `${multiKeys.cv.workExperience}.${item}.job.position`
-          )}
-          project={t(`${multiKeys.system.CVWorkDetails.project}`)}
-          projectName={t(
-            `${multiKeys.cv.workExperience}.${item}.project.title`
-          )}
-          projectDescription={t(
-            `${multiKeys.cv.workExperience}.${item}.project.description`
-          )}
-          projectTechnologies={t(
-            `${multiKeys.cv.workExperience}.${item}.project.technologies`
-          )}
-          projectResponsibilities={getRespTransalteByIndex(`${item}`, t)}
-        />
-      ))}
+       <CVWorkInfo
+         companyAddress={t(
+           `${multiKeys.cv.education.university.address}`
+         )}
+         companyName={t(`${multiKeys.cv.education.university.name}`)}
+         workPeriod={t(`${multiKeys.cv.education.information.period}`)}
+         workPosition={t(
+           `${multiKeys.cv.education.information.degree}`
+         )}
+       />
 
       <CVTitle
         className="py-2"
