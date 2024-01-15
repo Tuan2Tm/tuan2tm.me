@@ -8,12 +8,17 @@ import {
   getWorkKeys,
   multiKeys,
 } from "@/i18n";
+import { Each } from "@/utils/Each";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
+  const arr = [1,2,3,4]
   return (
     <div className="mx-auto lg:w-1/3 md:w-2/3 container xl:w-1/3 rounded-md ">
+      <Each<number> of={arr} render={(item: number) => (
+        <p>{item}</p>
+      )}/>
       <CVTitle
         className="pb-2"
         title={t(multiKeys.system.CVHeaderTitle.summary)}
