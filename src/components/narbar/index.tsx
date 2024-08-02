@@ -11,7 +11,7 @@ function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <div className="h-12 backdrop-filter backdrop-blur-sm flex top-0 fixed bg-white w-full dark:bg-background/20 bg-opacity-50">
+    <div className="h-14 backdrop-filter backdrop-blur-sm flex top-0 fixed bg-white w-full dark:bg-background/20 bg-opacity-50">
       <Container className="justify-between items-center ">
         <Link href={"/"}>
           <h1>{t(multiKeys.app.name)}</h1>

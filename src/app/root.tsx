@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <div className="flex flex-col container items-center ">
           <NavBar />
-          <Header className="mt-12" />
+          <Header className="mt-14" />
         </div>
         {children}
         <div className="flex justify-center">
