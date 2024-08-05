@@ -91,8 +91,10 @@ const TestPage = () => {
         Lien he
       </Link>
       <p className="text-animation">
-        Im am <span className="after:content-['dev']"></span>
+        Im am{" "}
+        <span className="before:content-[''] before:animate-words before:text-sky-500"></span>
       </p>
+      <p className="animate-fadeInOut">Tuan2Tm</p>
     </div>
   );
 };

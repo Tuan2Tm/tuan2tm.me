@@ -20,9 +20,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         enableSystem
         disableTransitionOnChange
       >
-        <div className="flex flex-col container items-center ">
+        <div className="flex flex-col container items-center md:mb-14">
           <NavBar />
-          <Header className="mt-14" />
+          {/* <Header className="mt-14" /> */}
         </div>
         {children}
         <div className="flex justify-center">
