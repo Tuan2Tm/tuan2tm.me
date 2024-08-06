@@ -84,7 +84,7 @@ export const multiKeys = {
   },
 };
 
-export const getRespTransalteByIndex = <T>(
+export const getRespTranslateByIndex = <T>(
   index: keyof typeof viLang.cv.workExperience,
   t: (key: string) => string
 ) => {

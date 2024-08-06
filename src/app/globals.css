@@ -82,8 +82,9 @@
     @apply text-xl font-medium;
   }
 
-  h6 {
-    @apply text-base font-light;
+  h6,
+  p {
+    @apply text-base font-medium;
   }
 }
 
@@ -97,15 +98,7 @@
   }
 
   .text-animation {
-    @apply text-[34px] font-semibold overflow-hidden min-w-[280px];
-  }
-
-  .text-animation span {
-    position: relative;
-  }
-
-  .text-animation span:before {
-    color: cyan;
+    @apply text-[34px] font-semibold overflow-hidden min-w-[280px] leading-none;
   }
 
   .text-animation span::after {
