@@ -1,6 +1,6 @@
 {
   "cv": {
-    "persionalInfo": {
+    "personalInfo": {
       "fullname": "Tuan Trinh Minh",
       "position": "Frontend Developer",
       "email": "tuantm.job@gmail.com",
@@ -95,17 +95,23 @@
   },
   "system": {
     "CVHeaderTitle": {
-      "summary": "summary",
-      "skills": "technical skills",
+      "summary": "Summary",
+      "skills": "Technical skills",
       "experience": "Professional Expericence",
-      "education": "education",
-      "additionalInformation": "additional information"
+      "education": "Education",
+      "additionalInformation": "Additional Information"
     },
     "CVWorkDetails": {
       "project": "Project",
       "description": "Description",
       "technologies": "Technologies",
       "responsibilities": "Responsibilities"
+    },
+    "personalInfo": {
+      "email": "Email",
+      "name": "Name",
+      "phone": "Phone",
+      "linkedin": "Linkedin"
     },
     "lastUpdate": "Last updated: 10/03/2024",
     "footer": {

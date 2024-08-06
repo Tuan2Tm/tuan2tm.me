@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { CVSkillDetail, CVTitle, CVWorkInfo } from "@/components";
 import Container from "@/components/container";
 import { Button } from "@/components/ui/button";
@@ -15,6 +15,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
+import { toggleState } from "@/utils/func";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -39,6 +40,9 @@ export default function Home() {
             <div className="flex gap-x-3">
               <Button
                 variant="outline"
+                onClick={() =>
+                  toggleState(setIsContact, setIsOpen, isContact, isOpen)
+                }
                 className="relative p-5 rounded-lg shadow-md overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r
                   before:from-purple-500 before:to-blue-500 before:transition-transform before:duration-700 before:transform before:origin-center before:-translate-x-full hover:before:translate-x-0"
               >
@@ -47,7 +51,9 @@ export default function Home() {
 
               <Button
                 variant="outline"
-                onClick={() => setIsOpen((per) => !per)}
+                onClick={() =>
+                  toggleState(setIsOpen, setIsContact, isOpen, isContact)
+                }
                 className="relative p-5 rounded-lg shadow-md overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r
                 before:from-purple-500 before:to-blue-500 before:transition-transform before:duration-700 before:transform before:origin-center before:scale-x-0 hover:before:scale-x-100"
               >
@@ -64,14 +70,26 @@ export default function Home() {
                 workPosition={t(`${multiKeys.cv.education.information.degree}`)}
               />
             )}
-            {isOpen && (
-              <ul className="ml-4 list-disc transition-all duration-300">
+            {isContact && (
+              <ul className="ml-4 font-medium list-disc transition-all duration-300">
                 <li>
-                  <span>Email :</span>
+                  <span className=" mr-2">
+                    {t(`${multiKeys.system.personalInfo.name}`)} :
+                  </span>
+                  {t(`${multiKeys.cv.personalInfo.name}`)}
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <span className=" mr-2">
+                    {t(`${multiKeys.system.personalInfo.email}`)} :
+                  </span>
+                  {t(`${multiKeys.cv.personalInfo.email}`)}
+                </li>
+                <li>
+                  <span className=" mr-2">
+                    {t(`${multiKeys.system.personalInfo.phone}`)} :
+                  </span>
+                  {t(`${multiKeys.cv.personalInfo.phone}`)}
+                </li>
               </ul>
             )}
           </div>

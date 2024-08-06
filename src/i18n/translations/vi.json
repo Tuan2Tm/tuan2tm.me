@@ -1,6 +1,6 @@
 {
   "cv": {
-    "persionalInfo": {
+    "personalInfo": {
       "fullname": "Trịnh Minh Tuấn",
       "position": "FrontEnd Developer",
       "email": "tuantm@gmail.com",
@@ -95,7 +95,7 @@
   },
   "system": {
     "CVHeaderTitle": {
-      "summary": "tóm tắt",
+      "summary": "Tóm tắt",
       "skills": "Kỹ năng",
       "experience": "Kinh nghiệm làm việc",
       "education": "Học vấn",
@@ -106,6 +106,12 @@
       "description": "Mô tả",
       "technologies": "Công nghệ sử dụng",
       "responsibilities": "Trách nhiệm"
+    },
+    "personalInfo": {
+      "email": "Email",
+      "name": "Tên",
+      "phone": "Số điện thoại ",
+      "linkedin": "Linkedin"
     },
     "lastUpdate": "Last updated: 10/03/2024",
     "footer": {

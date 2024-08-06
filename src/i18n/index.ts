@@ -49,6 +49,12 @@ export const multiKeys = {
       technologies: "system.CVWorkDetails.technologies",
       responsibilities: "system.CVWorkDetails.responsibilities",
     },
+    personalInfo: {
+      email: "system.personalInfo.email",
+      name: "system.personalInfo.name",
+      phone: "system.personalInfo.phone",
+      linkedin: "system.personalInfo.linkedin",
+    },
     lastUpdate: "system.lastUpdate",
     footer: {
       intro: "system.intro",
@@ -56,7 +62,12 @@ export const multiKeys = {
     },
   },
   cv: {
-    persionalInfo: {},
+    personalInfo: {
+      email: "cv.personalInfo.email",
+      name: "cv.personalInfo.fullname",
+      phone: "cv.personalInfo.phone",
+      linkedin: "cv.personalInfo.linkedin",
+    },
     summary: "cv.summary",
     skills: "cv.skills",
     workExperience: "cv.workExperience",
