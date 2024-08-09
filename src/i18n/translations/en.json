@@ -121,6 +121,9 @@
   },
   "app": {
     "name": "Tuan Trinh Minh",
-    "content": "Tuan Trinh Minh"
+    "content": "Tuan Trinh Minh",
+    "info": {
+      "hi": "Hello, I am Tuan Trinh"
+    }
   }
 }

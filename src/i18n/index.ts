@@ -41,6 +41,7 @@ export const multiKeys = {
       skills: "system.CVHeaderTitle.skills",
       experience: "system.CVHeaderTitle.experience",
       education: "system.CVHeaderTitle.education",
+      contact: "system.CVHeaderTitle.contact",
       additionalInformation: "system.CVHeaderTitle.additionalInformation",
     },
     CVWorkDetails: {
@@ -70,6 +71,7 @@ export const multiKeys = {
     },
     summary: "cv.summary",
     skills: "cv.skills",
+    contact: "cv.contact",
     workExperience: "cv.workExperience",
     education: {
       university: {
@@ -85,6 +87,9 @@ export const multiKeys = {
   },
   app: {
     name: "app.name",
+    info: {
+      hi: "app.info.hi",
+    },
   },
   settings: {
     languages: {
