@@ -16,6 +16,17 @@ interface Props {
   projectResponsibilities?: Array<string>;
 }
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
+import { Card } from "./ui/card";
+import Link from "next/link";
+
 const CVWorkInfo: React.FC<Props> = (props) => {
   const { t } = useTranslation();
 
@@ -43,37 +54,80 @@ const CVWorkInfo: React.FC<Props> = (props) => {
       </div>
 
       {props.project && (
-        <div className="mt-3">
-          <p>
-            <span className="font-semibold mr-2">{props.project}:</span>
-            {props.projectName}
-          </p>
-          <ul className="list-disc ml-8">
-            <li className="mt-1">
-              <p>
-                <span className="font-semibold mr-2">
-                  {t(`${multiKeys.system.CVWorkDetails.description}`)}:
-                </span>
-                {props.projectDescription}
-              </p>
-            </li>
-            <li>
-              <p>
-                <span className="font-semibold mr-2">
-                  {t(`${multiKeys.system.CVWorkDetails.technologies}`)}:
-                </span>
-                {props.projectTechnologies}
-              </p>
-            </li>
-            <li>
-              <p>{t(`${multiKeys.system.CVWorkDetails.responsibilities}`)}:</p>
-              <ul className="list-[circle] ml-8">
-                {props.projectResponsibilities?.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </li>
-          </ul>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:mt-5">
+          <Dialog>
+            <DialogTrigger>
+              <Card className="hover:cursor-pointer">
+                <div className="flex flex-col rounded-lg justify-between p-6 md:p-8 gap-14">
+                  <div className="flex justify-between items-center ">
+                    <Link href={"https://phenikaa-x.com/"} target="_blank">
+                      <h2>Phenikaa-X Website</h2>
+                    </Link>
+                    <p>10/2020 – 04/2023</p>
+                  </div>
+                  <p className="text-left text-ellipsis line-clamp-2">
+                    Deploying monitoring and advertising applications for the
+                    company, controlling and providing web services for
+                    autonomous vehicles and unmanned aerial vehicles.
+                  </p>
+                </div>
+              </Card>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <div>
+                  <DialogTitle>
+                    <p>
+                      <span className="font-semibold mr-2">
+                        {props.project}:
+                      </span>
+                      {props.projectName}
+                    </p>
+                  </DialogTitle>
+                  <DialogDescription>
+                    <ul className="list-disc ml-4">
+                      <li className="mt-1">
+                        <p>
+                          <span className="font-semibold mr-2">
+                            {t(`${multiKeys.system.CVWorkDetails.description}`)}
+                            :
+                          </span>
+                          {props.projectDescription}
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span className="font-semibold mr-2">
+                            {t(
+                              `${multiKeys.system.CVWorkDetails.technologies}`
+                            )}
+                            :
+                          </span>
+                          {props.projectTechnologies}
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          {t(
+                            `${multiKeys.system.CVWorkDetails.responsibilities}`
+                          )}
+                          :
+                        </p>
+                        <ul className="list-[circle] ml-8">
+                          {props.projectResponsibilities?.map((item, idx) => (
+                            <li key={idx}>{item}</li>
+                          ))}
+                        </ul>
+                      </li>
+                    </ul>
+                  </DialogDescription>
+                </div>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
+
+          <div className="flex bg-purple-300">2</div>
+          <div className="flex bg-pink-400">3</div>
         </div>
       )}
     </div>

@@ -15,6 +15,14 @@ import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -65,34 +73,46 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="flex flex-col md:mt-10" id="education">
+        <div className="flex flex-col md:mt-10">
           <CVTitle
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.experience)}
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <Card className="hover:cursor-pointer">
-              <div className="flex flex-col rounded-lg justify-between p-6 md:p-8 gap-14">
-                <div className="flex justify-between items-center ">
-                  <Link href={"https://phenikaa-x.com/"} target="_blank">
-                    <h2>Phenikaa-X Website</h2>
-                  </Link>
-                  <p>10/2020 – 04/2023</p>
-                </div>
-                <p className="text-ellipsis line-clamp-2">
-                  Deploying monitoring and advertising applications for the
-                  company, controlling and providing web services for autonomous
-                  vehicles and unmanned aerial vehicles.
-                </p>
-              </div>
-            </Card>
 
-            <div className="flex bg-purple-300">2</div>
-            <div className="flex bg-pink-400">3</div>
-          </div>
+          {getWorkKeys().map((item, idx) => (
+            <CVWorkInfo
+              key={idx}
+              companyLink={t(
+                `${multiKeys.cv.workExperience}.${item}.company.link`
+              )}
+              companyAddress={t(
+                `${multiKeys.cv.workExperience}.${item}.company.address`
+              )}
+              companyName={t(
+                `${multiKeys.cv.workExperience}.${item}.company.name`
+              )}
+              workPeriod={t(
+                `${multiKeys.cv.workExperience}.${item}.job.period`
+              )}
+              workPosition={t(
+                `${multiKeys.cv.workExperience}.${item}.job.position`
+              )}
+              project={t(`${multiKeys.system.CVWorkDetails.project}`)}
+              projectName={t(
+                `${multiKeys.cv.workExperience}.${item}.project.title`
+              )}
+              projectDescription={t(
+                `${multiKeys.cv.workExperience}.${item}.project.description`
+              )}
+              projectTechnologies={t(
+                `${multiKeys.cv.workExperience}.${item}.project.technologies`
+              )}
+              projectResponsibilities={getRespTranslateByIndex(`${item}`, t)}
+            />
+          ))}
         </div>
 
-        <div className="flex flex-col md:mt-10">
+        <div className="flex flex-col md:mt-10" id="education">
           <CVTitle
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.education)}
