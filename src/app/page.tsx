@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import {
   getAdditionalInfoKeys,
   getPersonalSummaryKeys,
-  getRespTranslateByIndex,
+  getProjectKeys,
   getSkillKeys,
   getWorkKeys,
   multiKeys,
@@ -15,14 +15,6 @@ import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -53,7 +45,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="w-full h-auto md:w-2/3 md:h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/me.jpeg')]" />
+          <div className="w-full h-auto md:w-2/3 md:h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/me.jpg')]" />
         </div>
 
         <div className="flex flex-col md:mt-10">
@@ -74,10 +66,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col md:mt-10">
-          <CVTitle
-            className="py-2"
-            title={t(multiKeys.system.CVHeaderTitle.experience)}
-          />
+          <CVTitle title={t(multiKeys.system.CVHeaderTitle.experience)} />
 
           {getWorkKeys().map((item, idx) => (
             <CVWorkInfo
@@ -98,16 +87,8 @@ export default function Home() {
                 `${multiKeys.cv.workExperience}.${item}.job.position`
               )}
               project={t(`${multiKeys.system.CVWorkDetails.project}`)}
-              projectName={t(
-                `${multiKeys.cv.workExperience}.${item}.project.title`
-              )}
-              projectDescription={t(
-                `${multiKeys.cv.workExperience}.${item}.project.description`
-              )}
-              projectTechnologies={t(
-                `${multiKeys.cv.workExperience}.${item}.project.technologies`
-              )}
-              projectResponsibilities={getRespTranslateByIndex(`${item}`, t)}
+              projectKeys={getProjectKeys(`${item}`)}
+              position={item}
             />
           ))}
         </div>
@@ -130,7 +111,7 @@ export default function Home() {
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.additionalInformation)}
           />
-          <div className="flex flex-col md:flow-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between">
             {getAdditionalInfoKeys().map((item, idx) => (
               <p key={idx}>
                 {t(`${multiKeys.cv.additionalInformation}.${item}`)}

@@ -57,17 +57,198 @@
           "period": "07/2022 - Hiện tại"
         },
         "project": {
-          "title": "WebSite Phenikaa-X và Drone in a Box (DIB) Web Service.",
-          "description": "Triển khai các ứng dụng theo dõi, quảng cáo cho công ty , điều khiển và web service cho xe tự lại và máy bay không người lại",
-          "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
-          "responsibilities": {
-            "0": "Xây dựng cấu ​​trúc, quy ước viết code cho tất cả các dự án front-end và back-end",
-            "1": "Giao tiếp với các bên liên quan để xây dựng và thiết kế hệ thống WebService.",
-            "2": "Thiết kế lược đồ cơ sở dữ liệu và triển khai hệ thống back-end để quản lý dữ liệu từ hệ thống DIB và cung cấp cho ứng dụng front-end.",
-            "3": "Triển khai giao tiếp giữa hệ thống back-end và hệ thống DIB thông qua giao thức MQTT nhằm thu thập dữ liệu và ra lệnh.",
-            "4": "Tối ưu quá trình đọc, ghi dữ liệu từ Web Socket vào Postgres bằng cách cải thiện các truy vấn cơ sở dữ liệu.",
-            "5": "Nghiên cứu và xây dựng service trên drone nhằm giải mã thông tin dữ liệu, ra lệnh và giao tiếp với hệ thống back-end thông qua WebSocket.",
-            "6": "Quản lý code và triển khai UI UX với design qua figma để làm website "
+          "0": {
+            "title": "WebSite Phenikaa-X.",
+            "time": "07/2022 - Present",
+            "description": "Triển khai các ứng dụng theo dõi, quảng cáo cho công ty , điều khiển và web service cho xe tự lại và máy bay không người lại",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Xây dựng cấu ​​trúc, quy ước viết code cho tất cả các dự án front-end và back-end",
+              "1": "Giao tiếp với các bên liên quan để xây dựng và thiết kế hệ thống WebService.",
+              "2": "Thiết kế lược đồ cơ sở dữ liệu và triển khai hệ thống back-end để quản lý dữ liệu từ hệ thống DIB và cung cấp cho ứng dụng front-end.",
+              "3": "Triển khai giao tiếp giữa hệ thống back-end và hệ thống DIB thông qua giao thức MQTT nhằm thu thập dữ liệu và ra lệnh.",
+              "4": "Tối ưu quá trình đọc, ghi dữ liệu từ Web Socket vào Postgres bằng cách cải thiện các truy vấn cơ sở dữ liệu.",
+              "5": "Nghiên cứu và xây dựng service trên drone nhằm giải mã thông tin dữ liệu, ra lệnh và giao tiếp với hệ thống back-end thông qua WebSocket.",
+              "6": "Quản lý code và triển khai UI UX với design qua figma để làm website "
+            }
+          },
+          "1": {
+            "title": "Drone in a Box (DIB).",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "2": {
+            "title": "Phenikaa Mec.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "3": {
+            "title": "Phenet Smart Car.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "4": {
+            "title": "Semiconductor.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "5": {
+            "title": "Phenikaa Traning.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          }
+        }
+      },
+      "1": {
+        "company": {
+          "name": "Phenikaa-Mec JSC",
+          "address": "Hà Đông, Hà Nội",
+          "link": "https://phenikaa-x.com"
+        },
+        "job": {
+          "position": "Web Application Engineer",
+          "period": "07/2022 - Hiện tại"
+        },
+        "project": {
+          "0": {
+            "title": "WebSite Phenikaa-X.",
+            "time": "07/2022 - Present",
+            "description": "Triển khai các ứng dụng theo dõi, quảng cáo cho công ty , điều khiển và web service cho xe tự lại và máy bay không người lại",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Xây dựng cấu ​​trúc, quy ước viết code cho tất cả các dự án front-end và back-end",
+              "1": "Giao tiếp với các bên liên quan để xây dựng và thiết kế hệ thống WebService.",
+              "2": "Thiết kế lược đồ cơ sở dữ liệu và triển khai hệ thống back-end để quản lý dữ liệu từ hệ thống DIB và cung cấp cho ứng dụng front-end.",
+              "3": "Triển khai giao tiếp giữa hệ thống back-end và hệ thống DIB thông qua giao thức MQTT nhằm thu thập dữ liệu và ra lệnh.",
+              "4": "Tối ưu quá trình đọc, ghi dữ liệu từ Web Socket vào Postgres bằng cách cải thiện các truy vấn cơ sở dữ liệu.",
+              "5": "Nghiên cứu và xây dựng service trên drone nhằm giải mã thông tin dữ liệu, ra lệnh và giao tiếp với hệ thống back-end thông qua WebSocket.",
+              "6": "Quản lý code và triển khai UI UX với design qua figma để làm website "
+            }
+          },
+          "1": {
+            "title": "Drone in a Box (DIB).",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "2": {
+            "title": "Phenikaa Mec.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "3": {
+            "title": "Phenet Smart Car.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "4": {
+            "title": "Semiconductor.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
+          },
+          "5": {
+            "title": "Phenikaa Traning.",
+            "time": "07/2022 - Present",
+            "description": "Deploying monitoring and advertising applications for the company, controlling and providing web services for autonomous vehicles and unmanned aerial vehicles.",
+            "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Constructing the code structure and conventions for all front-end and back-end projects.",
+              "1": "Communicating with stakeholders to build and design WebService systems.",
+              "2": "Designing database schemas and implementing back-end systems to manage data from the DIB system and provide it to the front-end application.",
+              "3": "Implementing communication between the back-end system and the DIB system through the MQTT protocol for data collection and command execution.",
+              "4": "Optimizing the process of reading and writing data from Web Socket to Postgres by improving database queries.",
+              "5": "Researching and building services on drones to decode data information, issue commands, and communicate with the back-end system via WebSocket.",
+              "6": "Managing code and deploying UI/UX with design through Figma to create websites."
+            }
           }
         }
       }
