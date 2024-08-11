@@ -27,7 +27,6 @@ import {
 } from "./ui/dialog";
 import { Card } from "./ui/card";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 const CVWorkInfo: React.FC<Props> = (props) => {
   const { t } = useTranslation();
@@ -74,46 +73,41 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                         )}
                       </p>
                     </div>
-                    <p className="text-left text-ellipsis line-clamp-3 md:my-10">
+                    <p className="text-left text-ellipsis line-clamp-3 md:mt-12">
                       {t(
                         `${multiKeys.cv.workExperience}.${props.position}.project.${item}.description`
                       )}
                     </p>
-                    <Link href={"https://phenikaa-x.com/"} target="_blank">
-                      <Button
-                        variant="outline"
-                        className="relative p-5 rounded-lg shadow-md overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r
-                  before:from-purple-500 before:to-blue-500 before:transition-transform before:duration-700 before:transform before:origin-center before:-translate-x-full hover:before:translate-x-0"
-                      >
-                        <span className="relative">View</span>
-                      </Button>
-                    </Link>
                   </Card>
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle>
-                      <p>
+                      <Link href={"https://phenikaa-x.com/"} target="_blank">
                         <span className="font-semibold mr-2">
                           {props.project}:
                         </span>
-                        {props.projectName}
-                      </p>
+                        {t(
+                          `${multiKeys.cv.workExperience}.${props.position}.project.${item}.title`
+                        )}
+                      </Link>
                     </DialogTitle>
                     <DialogDescription>
-                      <ul className="list-disc ml-4">
+                      <ul className="list-disc ml-4 gap-y-5">
                         <li className="mt-1">
-                          <p>
+                          <p className="text-ellipsis line-clamp-3 hover:line-clamp-none">
                             <span className="font-semibold mr-2">
                               {t(
                                 `${multiKeys.system.CVWorkDetails.description}`
                               )}
                               :
                             </span>
-                            {props.projectDescription}
+                            {t(
+                              `${multiKeys.cv.workExperience}.${props.position}.project.${item}.description`
+                            )}
                           </p>
                         </li>
-                        <li>
+                        <li className="mt-1">
                           <p>
                             <span className="font-semibold mr-2">
                               {t(
@@ -121,7 +115,10 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                               )}
                               :
                             </span>
-                            {props.projectTechnologies}
+                            {t(
+                              `${multiKeys.cv.workExperience}.${props.position}.project.${item}.technologies`
+                            )}
+                            z
                           </p>
                         </li>
                         {/* <li>

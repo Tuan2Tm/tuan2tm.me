@@ -48,12 +48,12 @@
     "workExperience": {
       "0": {
         "company": {
-          "name": "Phenikaa-X JSC",
+          "name": "Phenikaa-X Company",
           "address": "Ha Dong, Ha Noi",
           "link": "https://phenikaa-x.com"
         },
         "job": {
-          "position": "Web Application Engineer",
+          "position": "Full Stack Deverloper",
           "period": "07/2022 - Present"
         },
         "project": {
@@ -151,9 +151,9 @@
       },
       "1": {
         "company": {
-          "name": "Phenikaa-Mec JSC",
-          "address": "Ha Dong, Ha Noi",
-          "link": "https://phenikaa-x.com"
+          "name": "ITS Global Company",
+          "address": "My Dinh, Ha Noi",
+          "link": "https://its-global.vn/"
         },
         "job": {
           "position": "Web Application Engineer",
