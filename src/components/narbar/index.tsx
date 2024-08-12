@@ -19,7 +19,7 @@ function NavBar() {
           <ModeLang />
           <ModeToggle />
           <Button variant="outline" size="icon">
-            <a href="/Tuan-Tm-cv.pdf" download>
+            <a href="/Tuan-Tm-CV.pdf" download>
               <Download className="size-[1.2rem]" />
             </a>
           </Button>
