@@ -9,7 +9,9 @@ const CVSkillDetail = ({
 }) => {
   return (
     <div className={`flex mb-1 ${className}`}>
-      {skillTitle && <p className="font-semibold">{skillTitle}: </p>}
+      {skillTitle && (
+        <p className="font-semibold text-nowrap">{skillTitle}: </p>
+      )}
       <p className="ml-2">{skillDetail}</p>
     </div>
   );

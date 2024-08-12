@@ -1,20 +1,53 @@
 import React from "react";
 import { ModeLang, ModeToggle } from "../header";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import {
+  Github,
+  Download,
+  Linkedin,
+  MailIcon,
+  PhoneCallIcon,
+} from "lucide-react";
 import Link from "next/link";
+import Container from "../container";
 
 function NavBar() {
   return (
-    <div className="h-12 backdrop-filter backdrop-blur-sm flex items-center justify-center top-0 fixed bg-white dark:bg-background/20  bg-opacity-50 container sm:justify-end">
-      <ModeLang />
-      <ModeToggle className="mx-2" />
-      <Link href={"https://github.com/Tuan2Tm"} target="_blank">
-      <Button variant="outline" size="icon">
-        <Github className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-        <Github className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      </Button>
-      </Link>
+    <div className="h-14 backdrop-filter backdrop-blur-sm flex top-0 fixed bg-white w-full dark:bg-background/20 bg-opacity-50 z-50">
+      <Container className="justify-end py-2">
+        <div className="flex gap-x-3">
+          <ModeLang />
+          <ModeToggle />
+          <Button variant="outline" size="icon">
+            <a href="/Tuan-Tm-cv.pdf" download>
+              <Download className="size-[1.2rem]" />
+            </a>
+          </Button>
+          <Link href={"https://github.com/Tuan2Tm"} target="_blank">
+            <Button variant="outline" size="icon">
+              <Github className="size-[1.2rem]" />
+            </Button>
+          </Link>
+          <Link
+            href={"https://www.linkedin.com/in/tuan-tm-3b68b32ba/"}
+            target="_blank"
+          >
+            <Button variant="outline" size="icon">
+              <Linkedin className="size-[1.2rem]" />
+            </Button>
+          </Link>
+          <Button variant="outline" size="icon">
+            <a href="mailto:tuantm@gmail.com" target="_blank">
+              <MailIcon className="size-[1.2rem]" />
+            </a>
+          </Button>
+          <Button variant="outline" size="icon">
+            <a href="tel:0375227286" target="_blank">
+              <PhoneCallIcon className="size-[1.2rem]" />
+            </a>
+          </Button>
+        </div>
+      </Container>
     </div>
   );
 }

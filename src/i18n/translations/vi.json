@@ -1,6 +1,6 @@
 {
   "cv": {
-    "persionalInfo": {
+    "personalInfo": {
       "fullname": "Trịnh Minh Tuấn",
       "position": "FrontEnd Developer",
       "email": "tuantm@gmail.com",
@@ -8,21 +8,21 @@
       "facebook": "https://www.facebook.com/tuantm02/"
     },
     "summary": {
-      "0": "Kỹ sư Frontend với hơn 2 năm kinh nghiệm trong phát triển ứng dụng bằng React và Nextjs. Cũng có kinh nghiệm trong việc phát triển các dự án liên quan đến ecommerce, landing page và mobile, điều khiển xe tự lái trong máy bay không người lái thông qua giao tiếp với hệ thống robot (ROS) bằng giao thức MQTT. Đồng thời có gần 1 năm kinh nghiệm trong phát triển backend với nestjs và nodejs",
-      "1": "Tôi luôn tận tâm và nghiêm túc với công việc để tạo ra giá trị cho công ty. Đồng thời luôn tìm tòi học hỏi, trau dồi kiến ​​thức, kỹ năng để trở thành một kỹ sư giỏi."
+      "0": "Kỹ sư Frontend với hơn 2 năm kinh nghiệm trong phát triển ứng dụng bằng React và Nextjs. Cũng có kinh nghiệm trong việc phát triển các dự án liên quan đến ecommerce, landing page và mobile, điều khiển xe tự lái, máy bay không người lái thông qua giao tiếp với hệ thống robot (ROS) bằng giao thức MQTT và Socket để xử lý dữ liệu. Đồng thời có gần 1 năm kinh nghiệm trong phát triển backend với Nodejs ",
+      "1": "Tôi luôn tận tâm và nghiêm túc với công việc để tạo ra giá trị cho công ty. Đồng thời luôn tìm tòi học hỏi, trau dồi kiến thức, kỹ năng để trở thành một kỹ sư giỏi."
     },
     "skills": {
       "0": {
-        "title": "Ngôn ngữ lập trình",
-        "details": "JavaScript(2 năm), TypeScript(1 năm)"
+        "title": "Ngôn ngữ lập trình.",
+        "details": "JavaScript(2+ năm), TypeScript(1+ năm)"
       },
       "1": {
         "title": "Hệ thống quản lý cơ sở dữ liệu",
-        "details": "MongoDB, MySQL"
+        "details": "MongoDB, MySQL, PostgreSQL."
       },
       "2": {
         "title": "Frameworks/Platforms",
-        "details": "NodeJS (Express), ReactJS, React Native, WebSocket, NextJS, NestJS."
+        "details": "NodeJS (Express), ReactJS, NextJS, Redis, Redux, React Native, WebSocket, MQTT, Tailwindcss, Bootstrap, .NET."
       },
       "3": {
         "title": "Version Control",
@@ -38,11 +38,11 @@
       },
       "6": {
         "title": "Một số công cụ khác",
-        "details": "JIRA, Postman, Swagger."
+        "details": "JIRA, Postman, Swagger, Figma."
       },
       "7": {
         "title": "Kinh nghiệm",
-        "details": "Có kinh nghiệm thiết kế và triển khai RESTful API. \n Quen thuộc với các phương pháp phát triển Agile/Scrum."
+        "details": "Có kinh nghiệm thiết kế và triển khai RESTful API, quen thuộc với các phương pháp phát triển Agile/Scrum."
       }
     },
     "workExperience": {
@@ -53,21 +53,147 @@
           "link": "https://phenikaa-x.com"
         },
         "job": {
-          "position": "Web Application Engineer",
-          "period": "07/2022 - Hiện tại"
+          "position": "Full Stack Developer",
+          "period": "03/2022 - 08/2024"
         },
         "project": {
-          "title": "WebSite Phenikaa-X và Drone in a Box (DIB) Web Service.",
-          "description": "Triển khai các ứng dụng theo dõi, quảng cáo cho công ty , điều khiển và web service cho xe tự lại và máy bay không người lại",
-          "technologies": "NestJS, Postgres, Docker, MQTT, NextJS, Vue3, tailwindcss, WebSocket.",
-          "responsibilities": {
-            "0": "Xây dựng cấu ​​trúc, quy ước viết code cho tất cả các dự án front-end và back-end",
-            "1": "Giao tiếp với các bên liên quan để xây dựng và thiết kế hệ thống WebService.",
-            "2": "Thiết kế lược đồ cơ sở dữ liệu và triển khai hệ thống back-end để quản lý dữ liệu từ hệ thống DIB và cung cấp cho ứng dụng front-end.",
-            "3": "Triển khai giao tiếp giữa hệ thống back-end và hệ thống DIB thông qua giao thức MQTT nhằm thu thập dữ liệu và ra lệnh.",
-            "4": "Tối ưu quá trình đọc, ghi dữ liệu từ Web Socket vào Postgres bằng cách cải thiện các truy vấn cơ sở dữ liệu.",
-            "5": "Nghiên cứu và xây dựng service trên drone nhằm giải mã thông tin dữ liệu, ra lệnh và giao tiếp với hệ thống back-end thông qua WebSocket.",
-            "6": "Quản lý code và triển khai UI UX với design qua figma để làm website "
+          "0": {
+            "title": "WebSite Phenikaa-X",
+            "time": "09/2023 - 12/2023",
+            "link": "https://phenikaa-x.com",
+            "description": "Trang website chính thức của công ty Phenikaa-X, giúp đối tác dễ dàng tìm kiếm về các sản phẩm của công ty và liên hệ.",
+            "technologies": "ReactJs, Vite, Tailwindcss.",
+            "responsibilities": {
+              "0": "Xây dựng và phát triển trang web giới thiệu công ty, đảm bảo giao diện chuyên nghiệp và thân thiện với người dùng.",
+              "1": "Tối ưu hóa trang web để tương tác mượt mà trên mọi thiết bị và trình duyệt.",
+              "2": "Theo dõi và cải thiện hiệu suất trang web, đặc biệt là tốc độ tải trang và trải nghiệm người dùng.",
+              "3": "Sử dụng Vite để tối ưu hóa quá trình phát triển và cải thiện hiệu suất dự án.",
+              "4": "Tích hợp và tối ưu hóa SEO để tăng khả năng tìm kiếm của trang web.",
+              "5": "Đóng vai trò là người chịu trách nhiệm chính trong việc quản lý và triển khai dự án."
+            }
+          },
+          "1": {
+            "title": "Drone in a Box",
+            "time": "01/2024 - 04/2024",
+            "link": "#",
+            "description": "Phát triển một hệ thống toàn diện để quản lý drone, bản đồ, vùng bay, bài bay và lập kế hoạch bay tự động. Hệ thống sử dụng WebSocket và Express để cung cấp giao tiếp thời gian thực, trong khi MongoDB được sử dụng để lưu trữ dữ liệu. Giao diện người dùng được xây dựng với Next.js, Socket.io và TailwindCSS, mang lại trải nghiệm người dùng tương tác và đáp ứng.",
+            "technologies": "Express, MongoDB, WebSocket, Cronjob, Next.js, Socket.io, TailwindCSS.",
+            "responsibilities": {
+              "0": "Thiết kế và xây dựng cấu trúc hệ thống tổng thể, bao gồm các thành phần front-end và back-end.",
+              "1": "Phát triển và duy trì giao tiếp thời gian thực giữa máy chủ và drone thông qua WebSocket, đảm bảo thu thập và xử lý dữ liệu một cách chính xác.",
+              "2": "Thiết kế các lược đồ cơ sở dữ liệu MongoDB để quản lý dữ liệu liên quan đến drone, vùng bay, và kế hoạch bay.",
+              "3": "Xây dựng các dịch vụ back-end sử dụng Express và Cronjob để tự động hóa quy trình lập kế hoạch bay và quản lý các nhiệm vụ bay.",
+              "4": "Tích hợp và quản lý các dịch vụ bản đồ, cho phép hiển thị và quản lý trực quan các vùng bay và lộ trình bay.",
+              "5": "Phát triển giao diện người dùng với Next.js và TailwindCSS, tối ưu hóa trải nghiệm quản lý drone cho người dùng.",
+              "6": "Làm việc chặt chẽ với các bên liên quan để xác định và tinh chỉnh các yêu cầu, đảm bảo hệ thống hoạt động hiệu quả và đáp ứng nhu cầu thực tế."
+            }
+          },
+          "2": {
+            "title": "Traning Center",
+            "time": "04/2024 - 08/2024",
+            "link": "https://ptc.phenikaax.com/",
+            "description": "Dự án quản lý và giới thiệu về 4 trung tâm của đại học Phenikaa Univercity. Quản lý các khóa học và giảng viên, đăng ký khóa học và đăng ký thi tín chỉ.",
+            "technologies": "ReactJs, NextJs, NodeJs(ExpressJs), MongoDB, Tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Xây dựng và phát triển trang web tổng hợp thông tin về 4 trung tâm, các khóa học, giảng viên và tính năng thanh toán.",
+              "1": "Phát triển dự án sử dụng Next.js, ShadUI, và TailwindCSS để tạo ra giao diện người dùng hiện đại và đáp ứng.",
+              "2": "Sử dụng WebSocket để cập nhật thông tin thanh toán thời gian thực cho người dùng.",
+              "3": "Thiết kế và quản lý hệ thống cơ sở dữ liệu, tính năng thanh toán, và đồng bộ dữ liệu giảng viên.",
+              "4": "Sử dụng WebSocket để thông báo cho người dùng khi thanh toán thành công.",
+              "5": "Tích hợp xác thực qua Google và Microsoft để người dùng có thể đăng nhập dễ dàng.",
+              "6": "Quản lý tất cả khóa học, người dùng, giảng viên, bài học và trung tâm.",
+              "7": "Chịu trách nhiệm chính trong việc triển khai và quản lý dự án."
+            }
+          },
+          "3": {
+            "title": "AutoCar",
+            "time": "03/2022 - 08/2022",
+            "link": "https://phenet-smartcar.phenikaa-x.com/",
+            "description": "Quản lý thông tin người dùng và xe, bao gồm các chức năng điều khiển và giám sát. Hệ thống sử dụng MQTT và WebSocket để truyền tải dữ liệu theo thời gian thực, đảm bảo cập nhật và xử lý thông tin nhanh chóng và chính xác.",
+            "technologies": "NodeJs(Express), VueJs, MQTT, React Native, WebSocket.",
+            "responsibilities": {
+              "0": "Thiết kế và quản lý hệ thống quản lý người dùng, bản đồ, và thông tin xe.",
+              "1": "Sử dụng JWT để xác thực tài khoản người dùng một cách an toàn.",
+              "2": "Phát triển phiên bản đầu tiên của ứng dụng di động.",
+              "3": "Xây dựng module quản lý xe và bản đồ trên máy chủ.",
+              "4": "Phát triển module tính toán quãng đường đã đi và thống kê thông tin xe.",
+              "5": "Thiết kế hệ thống đăng ký điểm dừng xe tự hành trên bản đồ.",
+              "6": "Chịu trách nhiệm chính trong việc quản lý và triển khai dự án."
+            }
+          },
+          "4": {
+            "title": "Semiconductor",
+            "time": "09/2022 - 04/2023",
+            "link": "https://semiconductor.phenikaa-uni.edu.vn/",
+            "description": "Trang website chính thức của trung tâm Semiconductor, giúp đối tác dễ dàng tìm kiếm về các sản phẩm của trung tâm và liên hệ.",
+            "technologies": "Word Press.",
+            "responsibilities": {
+              "0": "Tùy chỉnh giao diện trang web bằng công cụ của WordPress để thay đổi màu sắc, font chữ và bố cục.",
+              "1": "Lựa chọn và triển khai giao diện từ thư viện WordPress hoặc từ các nhà cung cấp bên thứ ba.",
+              "2": "Cài đặt và cấu hình các plugin cần thiết cho trang web.",
+              "3": "Tối ưu hóa tốc độ tải trang bằng cách sử dụng các công cụ như Google PageSpeed Insights.",
+              "4": "Tối ưu hóa nội dung và cấu trúc trang web để nâng cao thứ hạng SEO.",
+              "5": "Đảm bảo trang web hoạt động tốt trên mọi thiết bị và trình duyệt."
+            }
+          },
+          "5": {
+            "title": "Phenikaa Mec",
+            "time": "05/2023 - 08/2023",
+            "link": "https://mec.phenikaax.com/",
+            "description": "Trang website chính thức của bệnh viện Semiconductor, giúp đối tác dễ dàng tìm kiếm về các sản phẩm của bệnh viện và liên hệ đặt lịch khám.",
+            "technologies": "Word Press, NextJS, Tailwindcss, WebSocket.",
+            "responsibilities": {
+              "0": "Tùy chỉnh giao diện trang web bằng công cụ của WordPress, bao gồm màu sắc, font chữ, và bố cục.",
+              "1": "Lựa chọn và triển khai giao diện từ thư viện WordPress hoặc mua từ các nhà cung cấp.",
+              "2": "Phát triển trang đặt lịch khám và tra cứu thông tin bác sĩ.",
+              "3": "Cài đặt và cấu hình các plugin cần thiết theo yêu cầu của dự án.",
+              "4": "Tối ưu hóa tốc độ tải trang và trải nghiệm người dùng bằng cách sử dụng Google PageSpeed Insights.",
+              "5": "Tối ưu hóa SEO cho các trang và bài viết để tăng cường khả năng tìm kiếm.",
+              "6": "Đảm bảo trang web hiển thị tốt trên mọi thiết bị và trình duyệt."
+            }
+          }
+        }
+      },
+      "1": {
+        "company": {
+          "name": "ITS Global Company",
+          "address": "Mỹ Đình, Hà Nội",
+          "link": "https://its-global.vn/"
+        },
+        "job": {
+          "position": "Frontend Developer",
+          "period": "10/2021 - 02/2022"
+        },
+        "project": {
+          "0": {
+            "title": "Quản lý nhân sự",
+            "time": "10/2021 - 02/2022",
+            "link": "#",
+            "description": "Phát triển và triển khai hệ thống quản lý nhân sự toàn diện cho công ty, bao gồm quản lý thông tin nhân viên, theo dõi hiệu suất làm việc, chấm công, nghỉ phép, và quản lý tiền lương. Hệ thống đảm bảo tuân thủ các quy định pháp luật về lao động, đồng thời tích hợp các công cụ phân tích để hỗ trợ quyết định chiến lược và cải thiện môi trường làm việc.",
+            "technologies": "Express, React, Redux, MongoDB, WebSocket, Redis.",
+            "responsibilities": {
+              "0": "Xây dựng và phát triển hệ thống quản lý nhân sự, bao gồm việc theo dõi và quản lý thông tin nhân viên, tuyển dụng, và tiền lương.",
+              "1": "Tích hợp các chức năng để đánh giá hiệu suất làm việc của nhân viên và quản lý các chương trình đào tạo nội bộ.",
+              "2": "Phát triển giao diện người dùng để quản lý các quy trình như chấm công, nghỉ phép, và hợp đồng lao động một cách dễ dàng.",
+              "3": "Đảm bảo hệ thống đáp ứng các yêu cầu về bảo mật dữ liệu cá nhân và tuân thủ các quy định pháp luật liên quan đến lao động.",
+              "4": "Sử dụng các công cụ phân tích để theo dõi và báo cáo về tình trạng nhân sự, từ đó hỗ trợ các quyết định chiến lược của công ty.",
+              "5": "Tích hợp và quản lý hệ thống phản hồi nhân viên, giúp cải thiện môi trường làm việc và tăng cường sự hài lòng của nhân viên."
+            }
+          },
+          "1": {
+            "title": "Bán quần áo",
+            "time": "10/2021 - 02/2022",
+            "link": "#",
+            "description": "Phát triển và triển khai hệ thống bán hàng trực tuyến chuyên về quần áo, cho phép người dùng duyệt qua các sản phẩm, thêm vào giỏ hàng, và thanh toán một cách an toàn. Hệ thống tích hợp các tính năng quản lý kho, chương trình khách hàng thân thiết và phân tích doanh thu, nhằm tối ưu hóa trải nghiệm mua sắm và tăng cường tương tác với khách hàng.",
+            "technologies": "Express, React, Redux, MongoDB, WebSocket, Redis.",
+            "responsibilities": {
+              "0": "Xây dựng và phát triển hệ thống thanh toán trực tuyến, đảm bảo tính bảo mật và thuận tiện cho người dùng.",
+              "1": "Tích hợp các tính năng điểm thưởng và chương trình khách hàng thân thiết, khuyến khích người dùng mua sắm và quay lại.",
+              "2": "Phát triển giao diện người dùng để hiển thị các sản phẩm quần áo một cách trực quan và dễ dàng cho việc mua sắm.",
+              "3": "Theo dõi và tối ưu hóa quy trình thanh toán để giảm thiểu tỷ lệ từ bỏ giỏ hàng.",
+              "4": "Tích hợp các công cụ phân tích và báo cáo để theo dõi hành vi mua sắm của khách hàng và hiệu suất bán hàng.",
+              "5": "Đảm bảo trang web hoạt động mượt mà trên mọi thiết bị và trình duyệt, mang lại trải nghiệm mua sắm tốt nhất cho người dùng."
+            }
           }
         }
       }
@@ -79,7 +205,7 @@
       },
       "information": {
         "degree": "Chuyên ngành: Ứng dụng phần mềm",
-        "period": "10/2020 – 04/2023"
+        "period": "10/2020 - 04/2023"
       }
     },
     "additionalInformation": {
@@ -95,7 +221,7 @@
   },
   "system": {
     "CVHeaderTitle": {
-      "summary": "tóm tắt",
+      "summary": "Tóm tắt",
       "skills": "Kỹ năng",
       "experience": "Kinh nghiệm làm việc",
       "education": "Học vấn",
@@ -107,14 +233,23 @@
       "technologies": "Công nghệ sử dụng",
       "responsibilities": "Trách nhiệm"
     },
-    "lastUpdate": "Last updated: 10/03/2024",
+    "personalInfo": {
+      "email": "Email",
+      "name": "Tên",
+      "phone": "Số điện thoại ",
+      "linkedin": "Linkedin"
+    },
+    "lastUpdate": "Last updated: 01/08/2024",
     "footer": {
-      "intro": "2024 - PRESENT @ TuanTM",
+      "intro": "Copyright © 2024 TuanTM",
       "view": "lượt xem"
     }
   },
   "app": {
     "name": "Trịnh Minh Tuấn",
-    "content": "Trịnh Minh Tuấn"
+    "content": "Trịnh Minh Tuấn",
+    "info": {
+      "hi": "Xin chào. Mình là Trịnh Tuấn"
+    }
   }
 }

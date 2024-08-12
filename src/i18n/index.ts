@@ -41,6 +41,7 @@ export const multiKeys = {
       skills: "system.CVHeaderTitle.skills",
       experience: "system.CVHeaderTitle.experience",
       education: "system.CVHeaderTitle.education",
+      contact: "system.CVHeaderTitle.contact",
       additionalInformation: "system.CVHeaderTitle.additionalInformation",
     },
     CVWorkDetails: {
@@ -49,6 +50,12 @@ export const multiKeys = {
       technologies: "system.CVWorkDetails.technologies",
       responsibilities: "system.CVWorkDetails.responsibilities",
     },
+    personalInfo: {
+      email: "system.personalInfo.email",
+      name: "system.personalInfo.name",
+      phone: "system.personalInfo.phone",
+      linkedin: "system.personalInfo.linkedin",
+    },
     lastUpdate: "system.lastUpdate",
     footer: {
       intro: "system.intro",
@@ -56,9 +63,15 @@ export const multiKeys = {
     },
   },
   cv: {
-    persionalInfo: {},
+    personalInfo: {
+      email: "cv.personalInfo.email",
+      name: "cv.personalInfo.fullname",
+      phone: "cv.personalInfo.phone",
+      linkedin: "cv.personalInfo.linkedin",
+    },
     summary: "cv.summary",
     skills: "cv.skills",
+    contact: "cv.contact",
     workExperience: "cv.workExperience",
     education: {
       university: {
@@ -74,6 +87,9 @@ export const multiKeys = {
   },
   app: {
     name: "app.name",
+    info: {
+      hi: "app.info.hi",
+    },
   },
   settings: {
     languages: {
@@ -84,19 +100,18 @@ export const multiKeys = {
   },
 };
 
-export const getRespTransalteByIndex = <T>(
-  index: keyof typeof viLang.cv.workExperience,
-  t: (key: string) => string
+export const getProjectKeys = (
+  index: keyof typeof viLang.cv.workExperience
 ) => {
-  const project = viLang.cv.workExperience[index].project;
+  return Object.keys(viLang.cv.workExperience[index].project);
+};
 
-  if (project && project.responsibilities) {
-    return Object.keys(project.responsibilities).map((key) =>
-      t(`cv.workExperience.${index}.project.responsibilities.${key}`)
-    );
-  }
-
-  return [];
+export const getProjectResKeys = (
+  index: keyof typeof viLang.cv.workExperience,
+  indexPro: keyof (typeof viLang.cv.workExperience)[typeof index]["project"]
+) => {
+  const project = viLang.cv.workExperience[index].project[indexPro];
+  return Object.keys(project.responsibilities);
 };
 
 export const getWorkKeys = (): Array<keyof typeof viLang.cv.workExperience> =>
