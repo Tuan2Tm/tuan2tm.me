@@ -1,6 +1,6 @@
 "use client";
 
-import { multiKeys } from "@/i18n";
+import { getProjectResKeys, multiKeys } from "@/i18n";
 import { useTranslation } from "react-i18next";
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
   projectDescription?: string;
   projectTechnologies?: string;
   projectKeys?: Array<string>;
-  position?: string;
+  position?: "0" | "1";
 }
 
 import {
@@ -33,11 +33,11 @@ const CVWorkInfo: React.FC<Props> = (props) => {
 
   return (
     <div className="flex flex-col items-start w-full">
-      <div className="flex justify-between w-full mt-3 text-dark-500 dark:text-gray-200">
+      <div className="flex flex-col md:flex-row justify-between w-full mt-3 text-dark-500 dark:text-gray-200">
         <p className="font-semibold">{props.workPosition}</p>
         <p className="font-semibold">{props.workPeriod}</p>
       </div>
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between flex-col md:flex-row w-full">
         {props.companyLink ? (
           <a
             href={props.companyLink}
@@ -55,13 +55,13 @@ const CVWorkInfo: React.FC<Props> = (props) => {
       </div>
 
       {props.project && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:mt-5">
+        <div className="grid grid-cols-1 mt-3 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 md:mt-5">
           {props.projectKeys &&
             props.projectKeys.map((item, index) => (
               <Dialog key={index}>
                 <DialogTrigger>
-                  <Card className="flex flex-col items-start hover:cursor-pointer hover:scale-105 rounded-lg p-6 md:p-8">
-                    <div className="flex justify-between items-center w-full">
+                  <Card className="flex flex-col items-start hover:cursor-pointer hover:scale-105 rounded-lg p-6 sm:p-4 lg:p-8">
+                    <div className="flex sm:flex-col lg:flex-row sm:items-start justify-between items-center w-full">
                       <h2 className="text-nowrap">
                         {t(
                           `${multiKeys.cv.workExperience}.${props.position}.project.${item}.title`
@@ -73,7 +73,7 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                         )}
                       </p>
                     </div>
-                    <p className="text-left text-ellipsis line-clamp-3 md:mt-12">
+                    <p className="text-left text-ellipsis line-clamp-3 mt-6 md:mt-12">
                       {t(
                         `${multiKeys.cv.workExperience}.${props.position}.project.${item}.description`
                       )}
@@ -83,7 +83,12 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle>
-                      <Link href={"https://phenikaa-x.com/"} target="_blank">
+                      <Link
+                        href={t(
+                          `${multiKeys.cv.workExperience}.${props.position}.project.${item}.link`
+                        )}
+                        target="_blank"
+                      >
                         <span className="font-semibold mr-2">
                           {props.project}:
                         </span>
@@ -93,7 +98,7 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                       </Link>
                     </DialogTitle>
                     <DialogDescription>
-                      <ul className="list-disc ml-4 gap-y-5">
+                      <ul className="list-disc md:ml-4 text-left">
                         <li className="mt-1">
                           <p className="text-ellipsis line-clamp-3 hover:line-clamp-none">
                             <span className="font-semibold mr-2">
@@ -118,22 +123,29 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                             {t(
                               `${multiKeys.cv.workExperience}.${props.position}.project.${item}.technologies`
                             )}
-                            z
                           </p>
                         </li>
-                        {/* <li>
-                      <p>
-                        {t(
-                          `${multiKeys.system.CVWorkDetails.responsibilities}`
-                        )}
-                        :
-                      </p>
-                      <ul className="list-[circle] ml-8">
-                        {props.projectKeys?.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                        ))}
-                      </ul>
-                    </li> */}
+                        <li>
+                          <p>
+                            {t(
+                              `${multiKeys.system.CVWorkDetails.responsibilities}`
+                            )}
+                            :
+                          </p>
+                          <ul className="list-[circle] ml-4">
+                            {props.position &&
+                              getProjectResKeys(
+                                props.position,
+                                item as "0" | "1"
+                              )?.map((key, idx) => (
+                                <li key={idx}>
+                                  {t(
+                                    `${multiKeys.cv.workExperience}.${props.position}.project.${item}.responsibilities.${key}`
+                                  )}
+                                </li>
+                              ))}
+                          </ul>
+                        </li>
                       </ul>
                     </DialogDescription>
                   </DialogHeader>

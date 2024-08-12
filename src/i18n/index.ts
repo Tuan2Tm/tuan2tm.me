@@ -100,25 +100,18 @@ export const multiKeys = {
   },
 };
 
-// export const getRespTranslateByIndex = <T>(
-//   index: keyof typeof viLang.cv.workExperience,
-//   t: (key: string) => string
-// ) => {
-//   const project = viLang.cv.workExperience[index].project;
-
-//   if (project && project.responsibilities) {
-//     return Object.keys(project.responsibilities).map((key) =>
-//       t(`cv.workExperience.${index}.project.responsibilities.${key}`)
-//     );
-//   }
-
-//   return [];
-// };
-
 export const getProjectKeys = (
   index: keyof typeof viLang.cv.workExperience
 ) => {
   return Object.keys(viLang.cv.workExperience[index].project);
+};
+
+export const getProjectResKeys = (
+  index: keyof typeof viLang.cv.workExperience,
+  indexPro: keyof (typeof viLang.cv.workExperience)[typeof index]["project"]
+) => {
+  const project = viLang.cv.workExperience[index].project[indexPro];
+  return Object.keys(project.responsibilities);
 };
 
 export const getWorkKeys = (): Array<keyof typeof viLang.cv.workExperience> =>

@@ -12,8 +12,6 @@ import {
   multiKeys,
 } from "@/i18n";
 import { useTranslation } from "react-i18next";
-import { Card } from "@/components/ui/card";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -41,19 +39,21 @@ export default function Home() {
                 className="relative p-5 rounded-lg shadow-md overflow-hidden transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r
                 before:from-purple-500 before:to-blue-500 before:transition-transform before:duration-700 before:transform before:origin-center before:scale-x-0 hover:before:scale-x-100"
               >
-                <span className="relative">Education</span>
+                <span className="relative">
+                  {t(multiKeys.system.CVHeaderTitle.education)}
+                </span>
               </Button>
             </div>
           </div>
-          <div className="w-full h-auto md:w-2/3 md:h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/me.jpg')]" />
+          <div className="w-full h-[280px] mt-3 md:mt-0 md:w-2/3 md:h-[700px] bg-center bg-cover bg-no-repeat bg-[url('/images/me.jpg')]" />
         </div>
 
-        <div className="flex flex-col md:mt-10">
+        <div className="flex flex-col mt-5 md:mt-10">
           <CVTitle
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.skills)}
           />
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 ">
             {getSkillKeys().map((item, idx) => (
               <li key={idx}>
                 <CVSkillDetail
@@ -65,7 +65,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="flex flex-col md:mt-10">
+        <div className="flex flex-col mt-5 md:mt-10">
           <CVTitle title={t(multiKeys.system.CVHeaderTitle.experience)} />
 
           {getWorkKeys().map((item, idx) => (
@@ -93,7 +93,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col md:mt-10" id="education">
+        <div className="flex flex-col mt-5 md:mt-10" id="education">
           <CVTitle
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.education)}
@@ -106,7 +106,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex flex-col md:mt-10">
+        <div className="flex flex-col mt-5 md:mt-10">
           <CVTitle
             className="py-2"
             title={t(multiKeys.system.CVHeaderTitle.additionalInformation)}
