@@ -60,7 +60,7 @@ const CVWorkInfo: React.FC<Props> = (props) => {
             props.projectKeys.map((item, index) => (
               <Dialog key={index}>
                 <DialogTrigger>
-                  <Card className="flex flex-col items-start hover:cursor-pointer hover:scale-105 rounded-lg p-6 sm:p-4 lg:p-8">
+                  <Card className="flex flex-col items-start hover:cursor-pointer rounded-lg p-6 sm:p-4 lg:p-8">
                     <div className="flex sm:flex-col lg:flex-row sm:items-start justify-between items-center w-full">
                       <h2 className="text-nowrap">
                         {t(
@@ -100,7 +100,7 @@ const CVWorkInfo: React.FC<Props> = (props) => {
                     <DialogDescription>
                       <ul className="list-disc md:ml-4 text-left">
                         <li className="mt-1">
-                          <p className="text-ellipsis line-clamp-3 hover:line-clamp-none">
+                          <p className="text-ellipsis ">
                             <span className="font-semibold mr-2">
                               {t(
                                 `${multiKeys.system.CVWorkDetails.description}`
